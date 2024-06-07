@@ -17,13 +17,16 @@ body {
 /* Modules */
 .modules {
     padding: 80px 20px;
-    background-color: #ffffff;
+    background-color: #9d9d9d9d;
     text-align: center;
 }
 
 .modules h2 {
     font-size: 32px;
     margin-bottom: 40px;
+}
+.modules-container btn1{
+
 }
 .modules p{
     font-size: 20px;
