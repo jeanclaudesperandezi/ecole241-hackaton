@@ -1,0 +1,137 @@
+.instructeur {
+    padding: 80px 20px;
+    background-color: #9d9d9d9d;
+    text-align: center;
+}
+
+.instructeur h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.instructeur p{
+    font-size: 20px;
+    margin-bottom:40px ;}
+
+.instructeur-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px; margin: 0 auto;
+    gap: 40px;
+}
+.instructeur-card img{
+    max-width: 300px;
+    max-height: 300px;
+    border: 10%;
+}
+.instructeur-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%; max-width: 350px;
+}
+
+.instructeur-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.instructeur-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.instructeur-card a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.instructeur-card a:hover {
+    color: #45a049;
+}
+
+.instructeur-dropdown {
+    display: none;
+}
+
+.instructeur-dropdown.active {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.instructeur-dropdown a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.instructeur-dropdown a:hover {
+    color: #4CAF50;
+}
+
+@media (min-width: 768px) {
+    .instructeur-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .instructeur-dropdown {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .instructeur-dropdown a {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .instructeur {
+        padding: 60px 20px;
+    }
+    .instructeur-card img {
+        width: 180px;
+        height:180px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .instructeur h2 {
+        font-size: 28px;
+    }
+
+    .instructeur-container {
+        gap: 30px;
+    }
+
+    .instructeur-card {
+        padding: 20px;
+    }
+
+    .instructeur-card h3 {
+        font-size: 18px;
+    }
+
+    .instructeur-card p {
+        font-size: 14px;
+    }
+
+    .instructeur-dropdown.active {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
